@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="container" id="bannerPhoto">
+    <h1><strong>BEEFSQUATCH BURGERS</strong></h1>
+    <a href="/public/assets/img/Beefsquatch.jpg" alt="burger banner"></a>
+  </div>
+</div>
+<div class="row">
+  <div class="col" id="unsquatched">
+    <h2>Burger to be Squatched</h2>
+    <ul>
+      {{#each burgers}}
+        {{#unless devoured}}
+          {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+  <div class="col" id="squatched">
+    <h2>Squatched Burgers</h2>
+    <ul>
+      {{#each burgers}}
+        {{#if devoured}}
+          {{> burgers/burger-block devoured=false}}
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="container" id="form">
+    <form>
+      <div class="form-group">
+        <label for="burgerName">Burger Name:</label>
+        <input type="text" class="form-control" id="burgerName" placeholder="Example: If Looks Could Kale Burger">
+      </div>
+    </form>
+  </div>
+</div>
