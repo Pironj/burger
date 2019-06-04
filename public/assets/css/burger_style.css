@@ -26,6 +26,7 @@ body {
   border-color: #ffa807;
   height: 400px;
   z-index: 1;
+  min-width: 190.05px;
 }
 /* background chalkboard burger of the day element nested inside parent div */
 #chalkboard {
