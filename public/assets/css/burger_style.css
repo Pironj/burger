@@ -8,7 +8,7 @@ body {
   
 }
 /* beefsquatch burger icon with border */
-img {
+#gene {
   width: 200px;
   border-style: solid;
   border-color: black;
@@ -20,11 +20,32 @@ img {
 }
 /* div element to house user input burgers */
 #unsquatched {
-  /* margin-right: 5%; */
-  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
   border-radius: 0.5rem;
   border-style: solid;
   border-color: #ffa807;
+  height: 400px;
+  z-index: 1;
+}
+/* background chalkboard burger of the day element nested inside parent div */
+#chalkboard {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: 2;
+  border-radius: inherit;
+}
+#BOTD {
+  position: relative;
+  color: black;
+  height: 45%;
+  overflow-y: auto;
+  z-index: 999;
+  top: 35%;
+  color: rgb(228, 232, 250);
 }
 /* devoured burgers container */
 #squatched {

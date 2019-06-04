@@ -1,19 +1,22 @@
 <div class="row">
   <div class="container" id="bannerPhoto">
     <h1><strong>BEEFSQUATCH BURGERS</strong></h1>
-    <img src="/assets/img/Beefsquatch.jpg" alt="burger banner">
+    <img id="gene" src="/assets/img/Beefsquatch.jpg" alt="burger banner">
   </div>
 </div>
 <div class="row justify-content-around">
   <div class="col col-lg-5" id="unsquatched">
-    <h2>Burger to be Squatched</h2>
-    <ul>
-      {{#each burgers}}
-        {{#unless devoured}}
-          {{> burgers/burger-block devoured=true}}
-        {{/unless}}
-      {{/each}}
-    </ul>
+    <img id="chalkboard" src="/assets/img/chalkboard.jpg">
+    <div id="BOTD">
+      <ul>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{> burgers/burger-block devoured=true}}
+          {{/unless}}
+        {{/each}}
+      </ul>
+
+    </div>
   </div>
   <div class="col col-lg-5" id="squatched">
     <h2>Squatched Burgers</h2>
