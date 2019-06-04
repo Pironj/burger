@@ -1,5 +1,7 @@
 body {
   background-image: url("../img/Bobs-Burgers-Interior.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 img {
