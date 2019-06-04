@@ -1,19 +1,24 @@
+/* Setting background image to be responsive */
 body {
-  background-image: url("../img/Bobs-Burgers-Interior.jpg");
+  background: url("../img/Bobs-Burgers-Interior.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
+  
 }
-
+/* beefsquatch burger icon with border */
 img {
   width: 200px;
   border-style: solid;
   border-color: black;
   border-radius: 0.5rem;
 }
-
+/* element to house page title and pic */
 #bannerPhoto {
   margin-bottom: 8%;
 }
+/* div element to house user input burgers */
 #unsquatched {
   /* margin-right: 5%; */
   background-color: rgba(255, 255, 255, 0.9);
@@ -21,9 +26,8 @@ img {
   border-style: solid;
   border-color: #ffa807;
 }
-
+/* devoured burgers container */
 #squatched {
-  /* margin-left: 5%; */
   background-color: rgba(255, 255, 255, 0.9);  
   border-radius: 0.5rem;
   border-style: solid;
@@ -37,7 +41,7 @@ ul {
   text-decoration: line-through;
 }
 
-h1, h2 {
+h1, h2, p {
   font-family: 'Permanent Marker', cursive;
 }
 
@@ -50,10 +54,12 @@ h1, h2 {
 #formSubmit {
   display: flex;
   padding-left: 20%;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .change-devoured, #submitbtn {
   border-width: 2.4px;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .row {
@@ -70,4 +76,5 @@ footer {
 }
 #footertext {
   text-align: center;
+  font-family: 'Permanent Marker', cursive;
 }
