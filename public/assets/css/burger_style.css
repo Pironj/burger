@@ -1,0 +1,71 @@
+body {
+  background-image: url("../img/Bobs-Burgers-Interior.jpg");
+}
+
+img {
+  width: 200px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 0.5rem;
+}
+
+#bannerPhoto {
+  margin-bottom: 8%;
+}
+#unsquatched {
+  /* margin-right: 5%; */
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: #ffa807;
+}
+
+#squatched {
+  /* margin-left: 5%; */
+  background-color: rgba(255, 255, 255, 0.5);  
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: #ffa807;
+}
+
+ul {
+  padding-left: 0;
+}
+#eaten {
+  text-decoration: line-through;
+}
+
+h1, h2 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+#burgerName {
+  max-width: 60%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-width: 2.4px;
+  border-color: black;
+}
+#formSubmit {
+  display: flex;
+  padding-left: 20%;
+}
+
+.change-devoured, #submitbtn {
+  border-width: 2.4px;
+}
+
+.row {
+  margin-bottom: 5%;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: static;
+  bottom: 0;
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+}
+#footertext {
+  text-align: center;
+}
