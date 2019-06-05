@@ -1,42 +1,9 @@
-// $(function() {
-//   $(".change-devoured").on("click", function(event) {
-//     var id = $(this).data("id");
-//     var newDevoured = $(this).data("newdevoured");
+// Add sound effects to different elements on the page
 
-//     var newDevouredState = {
-//       devoured: newDevoured
-//     };
+$(document).ready(function() {
+  var audioChomp = new Audio('http://soundbible.com/mp3/Apple_Bite-Simon_Craggs-1683647397.mp3');
 
-//     //send PUT req to database.
-//     $.ajax("/api/burgers/" + id, {
-//       type: "PUT",
-//       data: newDevouredState
-//     }).then(
-//       function() {
-//         console.log("change devoured to", newDevoured);
-//         location.reload();
-//       }
-//     );
-//   });
-
-//   $(".create-form").on("submit", function(event) {
-//     // prevent page reloading
-//     event.preventDefault();
-
-//     var newBurger = {
-//       burger_name: $("#burgerName").val().trim(),
-//       devoured: 0
-//     };
-
-//     // send POST req.
-//     $.ajax("/api/burgers", {
-//       type: "POST",
-//       data: newBurger
-//     }).then(
-//       function() {
-//         console.log("made a new burger");
-//         location.reload();
-//       }
-//     );
-//   });
-// });
+  $("#devourBtn").on("click", function() {
+    audioChomp.play();
+  });
+});
